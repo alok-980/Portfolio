@@ -1,8 +1,8 @@
-import React from "react"
-import './Services.css'
-import theme_pattern from '../../assets/theme_pattern.svg'
-import arrow_icon from '../../assets/arrow_icon.svg'
-import Services_data from '../../assets/services_data'
+import React from "react";
+import './Services.css';
+import theme_pattern from '../../assets/theme_pattern.svg';
+import arrow_icon from '../../assets/arrow_icon.svg';
+import Services_data from '../../assets/services_data';
 
 function Services() {
     return (
@@ -25,7 +25,7 @@ function Services() {
                 })}
             </div>
         </div>
-    )
+    );
 }
 
-export default Services
+export default Services;

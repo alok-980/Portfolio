@@ -1,7 +1,7 @@
-import React from "react"
-import './Footer.css'
-import footer_logo from '../../assets/footer_logo.svg'
-import user_icon from '../../assets/user_icon.svg'
+import React from "react";
+import './Footer.css';
+import footer_logo from '../../assets/footer_logo.svg';
+import user_icon from '../../assets/user_icon.svg';
 
 function Footer() {
     return (
@@ -29,7 +29,7 @@ function Footer() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Footer
+export default Footer;

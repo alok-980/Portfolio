@@ -1,8 +1,8 @@
-import react from 'react'
-import './MyWork.css'
-import theme_pattern from '../../assets/theme_pattern.svg'
-import arrow_icon from '../../assets/arrow_icon.svg'
-import mywork_data from '../../assets/mywork_data'
+import react from 'react';
+import './MyWork.css';
+import theme_pattern from '../../assets/theme_pattern.svg';
+import arrow_icon from '../../assets/arrow_icon.svg';
+import mywork_data from '../../assets/mywork_data';
 
 function MyWork() {
     return (
@@ -24,4 +24,4 @@ function MyWork() {
     )
 }
 
-export default MyWork
+export default MyWork;

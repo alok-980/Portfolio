@@ -8,10 +8,10 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function Navbar() {
     const [menu, setMenu] = useState("about");
-    const [isMenuOpen, setIsMenuOpen] = useState(false); // Track the menu state (open or closed)
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen); // Toggle the menu visibility
+        setIsMenuOpen(!isMenuOpen);
     };
 
     return (

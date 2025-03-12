@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 80px;
-    margin: 80px 170px;
+    gap: 5rem;
+    margin: 5rem 10.625rem;
 }
 
 .about-title {
@@ -12,8 +12,8 @@
 }
 
 .about-title h1 {
-    padding: 0px 30px;
-    font-size: 80px;
+    padding: 0 1.875rem;
+    font-size: 5rem;
     font-weight: 600;
 }
 
@@ -26,32 +26,32 @@
 
 .about-section {
     display: flex;
-    gap: 80px;
+    gap: 5rem;
 }
 
 .about-right {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 5rem;
 }
 
 .about-para {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    font-size: 24px;
+    gap: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 .about-skills {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .about-skill {
     display: flex;
-    gap: 50px;
+    gap: 3.125rem;
     align-items: center;
     transition: 0.3s;
 }
@@ -62,8 +62,8 @@
 }
 
 .about-skill p {
-    min-width: 150px;
-    font-size: 24px;
+    min-width: 9.375rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -71,7 +71,7 @@
     outline: none;
     border: none;
     width: 50%;
-    height: 8px;
+    height: 0.5rem;
     border-radius: 50px;
     background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
 }
@@ -80,14 +80,14 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
 }
 
 .about-achievement {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
     transition: 0.5s;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .about-achievement h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 700;
     background: linear-gradient(270deg, #DF8908 50.41%, #B415FF 90.25%);
     background-clip: text;
@@ -106,6 +106,61 @@
 }
 
 .about-achievement p {
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 500;
+}
+
+@media (max-width: 48rem) {
+    .about {
+        gap: 3rem;
+        margin: 3rem 2rem;
+    }
+
+    .about-title h1 {
+        font-size: 3rem;
+        padding: 0 1.5rem;
+    }
+
+    .about-title img {
+        width: 5rem;
+    }
+
+    .about-section {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .about-right {
+        gap: 3rem;
+    }
+
+    .about-para {
+        font-size: 1.25rem;
+    }
+
+    .about-skills {
+        gap: 1.5rem;
+    }
+
+    .about-skill p {
+        font-size: 1.125rem;
+    }
+
+    .about-skill hr {
+        width: 60%;
+    }
+
+    .about-achievements {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .about-achievement h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-achievement p {
+        font-size: 1.25rem;
+    }
 }
