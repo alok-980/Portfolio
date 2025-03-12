@@ -1,15 +1,20 @@
 import React from "react"
 import './Hero.css'
 import profile_img from '../../assets/profile_img.svg'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function Hero() {
     return (
-        <div className="hero">
+        <div id="home" className="hero">
             <img src={profile_img} alt="" />
             <h1><span>I'm Alok Chauhan,</span> backend developer based in India.</h1>
             <p>I am frontend developer from mumbai, maharastra with 1 year of experience.</p>
             <div className="hero-action">
-                <div className="hero-connect">Connect with me</div>
+                <div className="hero-connect">
+                    <AnchorLink className="anchor-link" offset={50} href="#contact">
+                        Connect with me
+                    </AnchorLink>
+                </div>
                 <dic className="hero-resume">My resume</dic>
             </div>
         </div>

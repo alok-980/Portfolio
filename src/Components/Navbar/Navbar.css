@@ -5,6 +5,24 @@
     margin: 20px 170px;
 }
 
+.logo {
+    position: relative;
+}
+
+.logo h1 {
+    padding: 0px 30px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.logo img {
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
 .nav-menu {
     display: flex;
     align-items: center;
@@ -24,4 +42,21 @@
 
 .nav-connect:hover {
     transform: scale(1.05);
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-menu li img {
+    display: flex;
+    margin: auto;
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
 }

@@ -15,6 +15,24 @@
     max-width: 400px;
 }
 
+.footer-logo {
+    position: relative;
+}
+
+.footer-logo h1 {
+    padding: 0px 30px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.footer-logo img {
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
 .footer-top-right {
     display: flex;
     align-items: center;
