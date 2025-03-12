@@ -29,6 +29,10 @@
     gap: 5rem;
 }
 
+.about-left img {
+    height: 30.9rem;
+}
+
 .about-right {
     display: flex;
     flex-direction: column;
