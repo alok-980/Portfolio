@@ -1,8 +1,10 @@
+/* General Navbar Styles */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 20px 170px;
+    position: relative;
 }
 
 .logo {
@@ -59,4 +61,82 @@
 .anchor-link {
     text-decoration: none;
     color: white;
+}
+
+/* Mobile View Styles */
+@media (max-width: 768px) {
+    .navbar {
+        margin: 20px 50px;
+    }
+
+    .nav-connect {
+        display: none; /* Hide on mobile */
+    }
+
+    /* Menu open icon on mobile */
+    .nav-mob-open {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        z-index: 100;
+        cursor: pointer;
+    }
+
+    /* Menu close icon on mobile */
+    .nav-mob-close {
+        display: none; /* Initially hide close icon */
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        z-index: 101;
+        cursor: pointer;
+    }
+
+    /* Menu items on mobile */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        padding: 60px 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        gap: 20px;
+    }
+
+    /* Show menu when open */
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .nav-menu li p {
+        font-size: 18px;
+        color: #000;
+    }
+}
+
+/* Desktop View Styles */
+@media (min-width: 769px) {
+    .nav-mob-open,
+    .nav-mob-close {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-menu li {
+        margin: 0 15px;
+    }
 }

@@ -6,6 +6,32 @@ import location_icon from '../../assets/location_icon.svg'
 import call_icon from '../../assets/call_icon.svg'
 
 function Contact() {
+
+    const [result, setResult] = React.useState("");
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "0e65e049-70b7-4645-bba5-6acfb07e8671");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            setResult("Form Submitted Successfully");
+            event.target.reset();
+        } else {
+            console.log("Error", data);
+            setResult(data.message);
+        }
+    };
+
     return (
         <div id="contact" className="contact">
             <div className="contact-title">
@@ -28,16 +54,17 @@ function Contact() {
                         </div>
                     </div>
                 </div>
-                <form action="#" className="contact-right">
+                <form action="#" onSubmit={onSubmit} className="contact-right">
                     <label htmlFor="">Your Name</label>
-                    <input type="text" placeholder="Enter your name" name="name" />
+                    <input type="text" placeholder="Enter your name" name="name" required />
 
                     <label htmlFor="">Your email</label>
-                    <input type="email" placeholder="Enter your email" name="email" />
+                    <input type="email" placeholder="Enter your email" name="email" required />
 
                     <label htmlFor="">Write your message here</label>
-                    <textarea name="message" rows="8" placeholder="Enter your message"></textarea>
+                    <textarea name="message" rows="8" placeholder="Enter your message" required></textarea>
 
+                    <label htmlFor=""><span>{result}</span></label>
                     <button className="contact-submit" type="submit">Submit now</button>
                 </form>
             </div>
